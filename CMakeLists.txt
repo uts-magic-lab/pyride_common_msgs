@@ -47,6 +47,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
    FILES
    NodeStatus.msg
+   NodeMessage.msg
    ObjectBound.msg
    TrackedObjectInfo.msg
    TrackedObjectStatusChange.msg
