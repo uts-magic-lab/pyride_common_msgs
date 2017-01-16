@@ -1,5 +1,5 @@
 Header header
 uint8 objtype
 uint8 trackid
-int8  nameid
+string name
 uint8 status
