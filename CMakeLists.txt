@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   geometry_msgs
   actionlib
+  actionlib_msgs
   message_generation
 )
 
@@ -72,9 +73,9 @@ add_action_files(
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
-  actionlib_msgs
   std_msgs
   geometry_msgs
+  actionlib_msgs
 )
 
 ################################################
@@ -109,7 +110,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES pyride_common_msgs
-  CATKIN_DEPENDS std_msgs
+  CATKIN_DEPENDS std_msgs geometry_msgs actionlib_msgs message_runtime
 #  DEPENDS system_lib
 )
 
