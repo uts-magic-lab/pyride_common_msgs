@@ -7,7 +7,7 @@ from pyride_common_msgs.msg import NodeStatus, NodeMessage
 class PyRideLoopbackMsgRouter( object ):
     def __init__( self ):
         self.sub = rospy.Subscriber("/pyride/node_message", NodeMessage, self.input_cb)
-        self.pub = rospy.Publisher("/pyride/node_status", NodeStatus)
+        self.pub = rospy.Publisher("/pyride/node_status", NodeStatus,queue_size=2)
 
     def input_cb( self, input_msg ):
     	msg = NodeStatus()
