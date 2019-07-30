@@ -6,6 +6,7 @@ project(pyride_common_msgs)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   std_msgs
+  sensor_msgs
   geometry_msgs
   actionlib
   actionlib_msgs
@@ -54,6 +55,7 @@ add_message_files(
    TrackedObjectInfo.msg
    TrackedObjectStatusChange.msg
    TrackedObjectUpdate.msg
+   AnnotatedView.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -74,6 +76,7 @@ add_action_files(
 generate_messages(
   DEPENDENCIES
   std_msgs
+  sensor_msgs
   geometry_msgs
   actionlib_msgs
 )
