@@ -1,0 +1,4 @@
+string old_name # old name
+string new_name # name to change to 
+---
+bool success # result
